@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form>
+      <input type="text" name="result" id="result" readonly>
+      <br>
+      <input type="button" value="1" onclick="addToInput('1')">
+      <input type="button" value="2" onclick="addToInput('2')">
+      <input type="button" value="3" onclick="addToInput('3')">
+      <input type="button" value="+" onclick="addToInput('+')">
+      <br>
+      <input type="button" value="4" onclick="addToInput('4')">
+      <input type="button" value="5" onclick="addToInput('5')">
+      <input type="button" value="6" onclick="addToInput('6')">
+      <input type="button" value="-" onclick="addToInput('-')">
+      <br>
+      <input type="button" value="7" onclick="addToInput('7')">
+      <input type="button" value="8" onclick="addToInput('8')">
+      <input type="button" value="9" onclick="addToInput('9')">
+      <input type="button" value="*" onclick="addToInput('*')">
+      <br>
+      <input type="button" value="C" onclick="clearInput()">
+      <input type="button" value="0" onclick="addToInput('0')">
+      <input type="button" value="=" onclick="calculate()">
+      <input type="button" value="/" onclick="addToInput('/')">
+    </form>
+
+<BR>
+    <BR>
+    <h1>Money Denomination</h1>
+	<form>
+		<label for="2000">2000 notes:</label>
+		<input type="number" id="2000" name="2000"><br><br>
+		<label for="500">500 notes:</label>
+		<input type="number" id="500" name="500"><br><br>
+		<label for="100">100 notes:</label>
+		<input type="number" id="100" name="100"><br><br>
+		<label for="50">50 notes:</label>
+		<input type="number" id="50" name="50"><br><br>
+		<label for="checkCalculation">Check calculation:</label>
+		<input type="checkbox" id="checkCalculation" name="checkCalculation"><br><br>
+		<input type="button" value="Calculate Total" onclick="calculateTotal1()">
+	</form>
+	<div id="result1"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
