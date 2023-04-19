@@ -4,34 +4,42 @@
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet" />
     
   </head>
   <body>
-    <h1>Calculator</h1>
-    <form>
-      <input type="text" name="result" id="result" readonly>
-      <br>
-      <input type="button" value="1" onclick="addToInput('1')">
-      <input type="button" value="2" onclick="addToInput('2')">
-      <input type="button" value="3" onclick="addToInput('3')">
-      <input type="button" value="+" onclick="addToInput('+')">
-      <br>
-      <input type="button" value="4" onclick="addToInput('4')">
-      <input type="button" value="5" onclick="addToInput('5')">
-      <input type="button" value="6" onclick="addToInput('6')">
-      <input type="button" value="-" onclick="addToInput('-')">
-      <br>
-      <input type="button" value="7" onclick="addToInput('7')">
-      <input type="button" value="8" onclick="addToInput('8')">
-      <input type="button" value="9" onclick="addToInput('9')">
-      <input type="button" value="*" onclick="addToInput('*')">
-      <br>
-      <input type="button" value="C" onclick="clearInput()">
-      <input type="button" value="0" onclick="addToInput('0')">
-      <input type="button" value="=" onclick="calculate()">
-      <input type="button" value="/" onclick="addToInput('/')">
-    </form>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" placeholder="0" id="input" disabled />
+      </div>
+      <div class="buttons">
+        <!-- Full Erase -->
+        <input type="button" value="C" id="clear" />
+        <!-- Erase Single Value -->
+        <input type="button" value="DEL" id="erase" />
+        <input type="button" value="/" class="input-button" />
+        <input type="button" value="*" class="input-button" />
 
+        <input type="button" value="7" class="input-button" />
+        <input type="button" value="8" class="input-button" />
+        <input type="button" value="9" class="input-button" />
+        <input type="button" value="-" class="input-button" />
+
+        <input type="button" value="6" class="input-button" />
+        <input type="button" value="5" class="input-button" />
+        <input type="button" value="4" class="input-button" />
+        <input type="button" value="+" class="input-button" />
+
+        <input type="button" value="1" class="input-button" />
+        <input type="button" value="2" class="input-button" />
+        <input type="button" value="3" class="input-button" />
+
+        <input type="button" value="=" id="equal" />
+        <input type="button" value="0" class="input-button" />
+        <input type="button" value="." class="input-button" />
+      </div>
+    </div>
 <BR>
     <BR>
     <h1>Money Denomination</h1>
